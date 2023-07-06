@@ -1,0 +1,54 @@
+* {
+  box-sizing: border-box;
+}
+* .container {
+  width: 100%;
+  margin: 0 auto;
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 1fr 1fr 1fr;
+}
+* .container .childgrid {
+  display: grid;
+  width: 100%;
+  grid-gap: 10px;
+  grid-template-columns: 2fr 1fr 1fr;
+  grid-column: 1/4;
+}
+* .container .childgrid .two, * .container .childgrid .three, * .container .childgrid .four {
+  background-color: #F5EC99;
+}
+* .container .childgrid2 {
+  display: grid;
+  grid-column: 1/4;
+  width: 100%;
+  grid-gap: 10px;
+  grid-template-columns: repeat(2, 1fr);
+}
+* .container .childgrid2 .eight {
+  background-color: #EEC383;
+  z-index: 1;
+}
+* .container .five {
+  grid-row: 3/5;
+  grid-column: 1/3;
+  padding: 105px;
+}
+* .container .item {
+  height: 100px;
+}
+* .container .one {
+  grid-column-start: 1;
+  grid-column-end: 4;
+  background-color: #B15C5C;
+}
+* .container .five, * .container .six, * .container .seven {
+  background-color: #A2F1D5;
+}
+* .container .nine {
+  background-color: #98A4C1;
+}
+* .container .ten, * .container .eleven, * .container .twelve {
+  background-color: #B498C1;
+}/*# sourceMappingURL=style.css.map */
